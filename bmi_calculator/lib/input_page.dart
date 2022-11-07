@@ -9,6 +9,7 @@ import 'calculator.dart';
 enum Gender{
   male,
   female,
+  h,
 }
 class InputPage extends StatefulWidget {
   @override
@@ -16,7 +17,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  late Gender selectGender;
+  late Gender selectGender=Gender.h;
   int sliderHeight=180;
   int sliderWeight=60;
   int sliderAge=20;
