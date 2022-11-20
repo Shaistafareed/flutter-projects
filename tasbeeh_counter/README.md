@@ -1,18 +1,6 @@
 # tasbeeh_counter
-
-A new Flutter project.
-
-![Tasbeeh Counter](https://user-images.githubusercontent.com/101456852/180076016-be68cf1f-7996-4468-9733-01f8a94e33eb.png)
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![splash](https://user-images.githubusercontent.com/100860194/202917356-2220edd4-0a15-49db-b034-ef85dd2be78d.png)
+![main](https://user-images.githubusercontent.com/100860194/202917362-8f58304b-cef4-497b-b08d-60ddb5575298.png)
+![3rd](https://user-images.githubusercontent.com/100860194/202917365-0918cee8-d6b7-460d-b706-357925a8ff97.png)
+![4th](https://user-images.githubusercontent.com/100860194/202917370-3a91c058-fc76-482d-a7df-534427c93212.png)
+![5th](https://user-images.githubusercontent.com/100860194/202917375-cdc938ac-d7f2-4315-9a08-5bd062e90a71.png)
