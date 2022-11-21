@@ -26,7 +26,7 @@ class _myalertboxState extends State<myalertbox> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Text('Create Tasbeeh',
+                          const Text('Create New Tasbeeh',
                               style: TextStyle(
                                   color: Colors.white,
 
@@ -38,7 +38,7 @@ class _myalertboxState extends State<myalertbox> {
                     ),
 
                     content: Container(
-                      width: 300,
+                      width: 500,
                       height: 250,
                       child: Column(
                         children: <Widget>[

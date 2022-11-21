@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:tasbeeh_counter/view.dart';
 import 'home.dart';
-import 'tasbeeh.dart';
+
 
 
 class create extends StatefulWidget {
@@ -30,7 +30,7 @@ class _createState extends State<create> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Create Tasbeeh'),
-        backgroundColor: Colors.blue[800],
+        backgroundColor: Colors.blueGrey[600],
       ),
       body: SafeArea(
         child:  Container(

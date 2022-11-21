@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:tasbeeh_counter/home.dart';
+import 'view.dart';
 import 'newtasbeeh.dart';
 
 class viewall extends StatelessWidget {
@@ -56,16 +57,18 @@ class viewall extends StatelessWidget {
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                  child:Text(
-                                      'سبحان الله ',
-                                      style: TextStyle(
-                                          color: Colors.white,
+                                  child:TextButton(
+                                    child: Text('صَلَّىٰ اللّٰهُ عَلَىٰ سَیِّدِنَا مُحَمَّد', style: TextStyle(
+                                        color: Colors.white,
 
-                                          fontStyle: FontStyle.italic,
-                                          fontFamily: 'Open Sans',
-                                          fontSize: 30)
+                                        fontStyle: FontStyle.italic,
+                                        fontFamily: 'Open Sans',
+                                        fontSize: 20)),
+                                    onPressed: () {
+                                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>home()));
+                                    },
 
-                                  ),
+                                  )
                                 ),
                               ],
                             ),
@@ -74,7 +77,8 @@ class viewall extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
-                                    'How many times?33 ',
+                                    '3 Time Before'
+                                        ' 3 Time After  ',
                                     style: TextStyle(
                                         color: Colors.white,
 
@@ -83,42 +87,11 @@ class viewall extends StatelessWidget {
                                         fontSize: 20)
 
                                 ),
-                                Text(
-                                    'Number of Sets 1 ',
-                                    style: TextStyle(
-                                        color: Colors.white,
 
-                                        fontStyle: FontStyle.italic,
-                                        fontFamily: 'Open Sans',
-                                        fontSize: 20)
-
-                                ),
                               ],
                             ),
 
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.edit,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.delete,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                              ],
-                            ),
+
                           ]
                       ),
                     ),
@@ -145,16 +118,20 @@ class viewall extends StatelessWidget {
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                  child:Text(
-                                      'ٱلْحَمْدُ لِلَّٰهِ ',
-                                      style: TextStyle(
-                                          color: Colors.white,
+                                  child:TextButton(
+                                    child: Text('سبحان الله', style: TextStyle(
+                                        color: Colors.white,
 
-                                          fontStyle: FontStyle.italic,
-                                          fontFamily: 'Open Sans',
-                                          fontSize: 30)
-
-                                  ),
+                                        fontStyle: FontStyle.italic,
+                                        fontFamily: 'Open Sans',
+                                        fontSize: 20)),
+                                    onPressed: () {
+                                      print('Pressed');
+                                    },
+                                    onLongPress: () {
+                                      print('Long press');
+                                    },
+                                  )
                                 ),
                               ],
                             ),
@@ -163,51 +140,20 @@ class viewall extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
-                                    'How many times?33 ',
+                                    '50:Time ',
                                     style: TextStyle(
                                         color: Colors.white,
 
                                         fontStyle: FontStyle.italic,
                                         fontFamily: 'Open Sans',
-                                        fontSize: 20)
+                                        fontSize: 50)
 
                                 ),
-                                Text(
-                                    'Number of Sets 1 ',
-                                    style: TextStyle(
-                                        color: Colors.white,
 
-                                        fontStyle: FontStyle.italic,
-                                        fontFamily: 'Open Sans',
-                                        fontSize: 20)
-
-                                ),
                               ],
                             ),
 
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.edit,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.delete,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                              ],
-                            ),
+
                           ]
                       ),
                     ),
@@ -234,16 +180,20 @@ class viewall extends StatelessWidget {
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                  child:Text(
-                                      'اللّٰهُ أَكْبَر‎ ',
-                                      style: TextStyle(
-                                          color: Colors.white,
+                                  child:TextButton(
+                                    child: Text('ٱلْحَمْدُ لِلَّٰهِ ', style: TextStyle(
+                                        color: Colors.white,
 
-                                          fontStyle: FontStyle.italic,
-                                          fontFamily: 'Open Sans',
-                                          fontSize: 30)
-
-                                  ),
+                                        fontStyle: FontStyle.italic,
+                                        fontFamily: 'Open Sans',
+                                        fontSize: 20)),
+                                    onPressed: () {
+                                      print('Pressed');
+                                    },
+                                    onLongPress: () {
+                                      print('Long press');
+                                    },
+                                  )
                                 ),
                               ],
                             ),
@@ -252,51 +202,20 @@ class viewall extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
-                                    'How many times?33 ',
+                                    '50:Time ',
                                     style: TextStyle(
                                         color: Colors.white,
 
                                         fontStyle: FontStyle.italic,
                                         fontFamily: 'Open Sans',
-                                        fontSize: 20)
+                                        fontSize: 50)
 
                                 ),
-                                Text(
-                                    'Number of Sets 1 ',
-                                    style: TextStyle(
-                                        color: Colors.white,
 
-                                        fontStyle: FontStyle.italic,
-                                        fontFamily: 'Open Sans',
-                                        fontSize: 20)
-
-                                ),
                               ],
                             ),
 
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.edit,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.delete,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                              ],
-                            ),
+
                           ]
                       ),
                     ),
@@ -323,16 +242,20 @@ class viewall extends StatelessWidget {
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                  child:Text(
-                                      ' أَسْتَغْفِرُ اللّٰهَ‎  ',
-                                      style: TextStyle(
-                                          color: Colors.white,
+                                  child:TextButton(
+                                    child: Text('اللّٰهُ أَكْبَر', style: TextStyle(
+                                        color: Colors.white,
 
-                                          fontStyle: FontStyle.italic,
-                                          fontFamily: 'Open Sans',
-                                          fontSize: 30)
-
-                                  ),
+                                        fontStyle: FontStyle.italic,
+                                        fontFamily: 'Open Sans',
+                                        fontSize: 20)),
+                                    onPressed: () {
+                                      print('Pressed');
+                                    },
+                                    onLongPress: () {
+                                      print('Long press');
+                                    },
+                                  )
                                 ),
                               ],
                             ),
@@ -341,51 +264,20 @@ class viewall extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
-                                    'How many times?33 ',
+                                    '50:Time ',
                                     style: TextStyle(
                                         color: Colors.white,
 
                                         fontStyle: FontStyle.italic,
                                         fontFamily: 'Open Sans',
-                                        fontSize: 20)
+                                        fontSize: 50)
 
                                 ),
-                                Text(
-                                    'Number of Sets 1 ',
-                                    style: TextStyle(
-                                        color: Colors.white,
 
-                                        fontStyle: FontStyle.italic,
-                                        fontFamily: 'Open Sans',
-                                        fontSize: 20)
-
-                                ),
                               ],
                             ),
 
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.edit,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.delete,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                              ],
-                            ),
+
                           ]
                       ),
                     ),
@@ -411,16 +303,20 @@ class viewall extends StatelessWidget {
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                  child:Text(
-                                      'صَلَّىٰ اللّٰهُ عَلَىٰ سَیِّدِنَا مُحَمَّدٍ ',
-                                      style: TextStyle(
-                                          color: Colors.white,
+                                  child: TextButton(
+                                    child: Text('أَسْتَغْفِرُ اللّٰهَ‎', style: TextStyle(
+                                        color: Colors.white,
 
-                                          fontStyle: FontStyle.italic,
-                                          fontFamily: 'Open Sans',
-                                          fontSize: 30)
-
-                                  ),
+                                        fontStyle: FontStyle.italic,
+                                        fontFamily: 'Open Sans',
+                                        fontSize: 20)),
+                                    onPressed: () {
+                                      print('Pressed');
+                                    },
+                                    onLongPress: () {
+                                      print('Long press');
+                                    },
+                                  )
                                 ),
                               ],
                             ),
@@ -429,51 +325,20 @@ class viewall extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text(
-                                    'How many times?1 ',
+                                    '50:Time ',
                                     style: TextStyle(
                                         color: Colors.white,
 
                                         fontStyle: FontStyle.italic,
                                         fontFamily: 'Open Sans',
-                                        fontSize: 20)
+                                        fontSize: 50)
 
                                 ),
-                                Text(
-                                    'Before and After ',
-                                    style: TextStyle(
-                                        color: Colors.white,
 
-                                        fontStyle: FontStyle.italic,
-                                        fontFamily: 'Open Sans',
-                                        fontSize: 20)
-
-                                ),
                               ],
                             ),
 
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.edit,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                                IconButton(
-                                  icon: Icon(
-                                    Icons.delete,
-                                  ),
-                                  color:Color(0xFF2F2F2F),
-                                  splashColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onPressed: () {},
-                                ),
-                              ],
-                            ),
+
                           ]
                       ),
                     ),
