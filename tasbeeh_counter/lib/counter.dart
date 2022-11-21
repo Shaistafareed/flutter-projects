@@ -131,14 +131,14 @@ class _CounterPageState extends State<CounterPage> {
                               fontSize: 30)
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(0,35,0,0),
+                        padding: const EdgeInsets.fromLTRB(0,10,0,0),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             IconButton(
                               icon: Icon(
-                                  Icons.add,size: 50
+                                  Icons.add_circle_outline_rounded,size: 50
                               ),
                               color:Colors.white,
 
@@ -147,7 +147,7 @@ class _CounterPageState extends State<CounterPage> {
 
                             IconButton(
                               icon: Icon(
-                                  Icons.refresh,size:   50
+                                  Icons.refresh,size:   110
                               ),
                               color:Colors.white,
 

@@ -23,7 +23,7 @@ class _viewState extends State<view> {
     return Scaffold(
       appBar: AppBar(
         title: Text('View All Tasbeeh'),
-        backgroundColor: Colors.blue[800],
+        backgroundColor: Colors.blueGrey[600],
       ),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('tasbeeh').snapshots(),
@@ -59,7 +59,7 @@ class CardList extends StatelessWidget {
     return Container(
         height: 80,
         decoration: BoxDecoration(
-            color: Colors.blue[400],
+            color: Colors.blueGrey[600],
             borderRadius: BorderRadius.all(Radius.circular(10))),
         child: Center(
             child: Row(
@@ -131,7 +131,7 @@ class CardList extends StatelessWidget {
                                RaisedButton(
                                  shape: StadiumBorder(),
                                  textColor: Colors.white,
-                                 color: Colors.blue,
+                                 color: Colors.blueGrey,
                                  child: Text('OK'),
                                  onPressed: () {
                                    FirebaseFirestore.instance.collection("tasbeeh").doc(docid).update({

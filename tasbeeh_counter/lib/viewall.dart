@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tasbeeh_counter/home.dart';
-import 'view.dart';
+
 import 'newtasbeeh.dart';
 
 class viewall extends StatelessWidget {
@@ -65,7 +65,7 @@ class viewall extends StatelessWidget {
                                         fontFamily: 'Open Sans',
                                         fontSize: 20)),
                                     onPressed: () {
-                                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>home()));
+
                                     },
 
                                   )
