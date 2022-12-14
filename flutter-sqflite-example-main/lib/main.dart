@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/screens/note_list.dart';
-import 'package:note_app/screens/note_detail.dart';
+import 'package:flutter_sqflite_example/pages/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,10 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Husk Mine Noter",
+      title: 'Flutter SQFLite Example',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.purple),
-      home: NoteList(),
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+        accentColor: Colors.tealAccent,
+      ),
+      home: HomePage(),
     );
   }
 }
