@@ -13,14 +13,20 @@ class Quizzler extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.grey.shade900,
+        backgroundColor: Colors.white12,
 
         body: SafeArea(
+
+
           child: Padding(
+
             padding: EdgeInsets.symmetric(horizontal: 10.0),
             child: start(),
           ),
         ),
+
+
+
       ),
     );
   }
@@ -52,9 +58,9 @@ class _startState extends State<start> {
                 children: [
                   Container(
                     height: 50,
-                    width: 50,
+                    width:50,
                     child:Image(
-                        image: AssetImage("assets/ss.jpg"),
+                        image: AssetImage("6.png"),
                         fit: BoxFit.cover),
                   ),
 
@@ -63,18 +69,27 @@ class _startState extends State<start> {
                     width: 10,
                   ),
                   const Text(
-                    'Quiz App',
-                    style: TextStyle(color: Colors.red),
+                    'WelCom To Quiz App',textAlign: TextAlign.center,style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                      fontFamily: 'Open Sans',
+                      fontSize: 20)
+
                   ),
                 ],
               ),
-              backgroundColor: Colors.red, //<-- SEE HERE
+              backgroundColor: Colors.blueGrey, //<-- SEE HERE
 
             ),
-            body: Padding(
-              padding: const EdgeInsets.all(13.0),
-              child: Container(
-                  color: Colors.yellow,
+            body:
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("5.png"),
+                  fit: BoxFit.cover,
+                ),
+              ),
 
                   child:Column(
 
@@ -84,10 +99,10 @@ class _startState extends State<start> {
                           height: 40,
                         ),
                         Container(
-                          color: Colors.red,
+                          color: Colors.blueGrey,
                           height: 30,
                           width: 200,
-                          child: Text("Enter questions",textAlign: TextAlign.center,style: TextStyle(
+                          child: Text("Enter Your Questions",textAlign: TextAlign.center,style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
                               fontStyle: FontStyle.italic,
@@ -100,7 +115,7 @@ class _startState extends State<start> {
 
                           controller:  fieldText,
                           decoration: InputDecoration(
-                            hintText: " Your Question?",
+                            hintText: " Enter Your Question?",
                             border: OutlineInputBorder(),
                             suffixIcon: IconButton(
                                 onPressed:(){
@@ -133,8 +148,8 @@ class _startState extends State<start> {
                                 if(c==5){
                                   Alert(
                                     context: context,
-                                    title: 'Success!',
-                                    desc: 'You\'ve enterd five question?',
+                                    title: 'Completed!',
+                                    desc: 'You are Enter 5 Question?',
                                   ).show();
                                   Navigator.push(
                                     context,
@@ -151,8 +166,13 @@ class _startState extends State<start> {
                               style: ButtonStyle(
                                   elevation: MaterialStateProperty.all(8),
 
-                                  backgroundColor: MaterialStateProperty.all(Colors.green)),
-                              child: const Text('true')),
+                                  backgroundColor: MaterialStateProperty.all(Colors.blueGrey)),
+                              child: const Text('true',textAlign: TextAlign.center,style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.italic,
+                                  fontFamily: 'Open Sans',
+                                  fontSize: 40),)),
                         ),
 
                         SizedBox(
@@ -173,8 +193,8 @@ class _startState extends State<start> {
                                 if(c==5){
                                   Alert(
                                     context: context,
-                                    title: 'Good!',
-                                    desc: 'you enterd five question?',
+                                    title: 'You want go to back? !',
+                                    desc: 'Click the Cancle Button',
                                   ).show();
                                   Navigator.push(
                                     context,
@@ -189,9 +209,14 @@ class _startState extends State<start> {
                               style: ButtonStyle(
                                   elevation: MaterialStateProperty.all(8),
 
-                                  backgroundColor: MaterialStateProperty.all(Colors.red)),
-                              child: const Text('false')),
-                        ),
+                                  backgroundColor: MaterialStateProperty.all(Colors.blueGrey)),
+                              child: const Text('false',textAlign: TextAlign.center,style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.italic,
+                                  fontFamily: 'Open Sans',
+                                  fontSize: 40),))),
+
                         SizedBox(
                           height: 10,
                         ),
@@ -203,7 +228,7 @@ class _startState extends State<start> {
                       ])
               ),
             )
-        )
+
     );
 
 
@@ -234,13 +259,13 @@ class _QuizPageState extends State<QuizPage> {
           correct++;
           scoreKeeper.add(Icon(
             Icons.check,
-            color: Colors.red,
+            color: Colors.blueGrey,
           ));
         } else {
           wrong++;
           scoreKeeper.add(Icon(
             Icons.close,
-            color: Colors.blue,
+            color: Colors.orange,
           ));
         }
 
@@ -250,8 +275,8 @@ class _QuizPageState extends State<QuizPage> {
         //Modified for our purposes:
         Alert(
           context: context,
-          title: 'Finished!',
-          desc: 'You\'ve reached the end of the quiz.\n Corrrect Answer=$correct\nwrong Answer=$wrong',
+          title: 'Result!',
+          desc: '\n Your Corrrect Answer is =$correct\nYour Wrong Answer is =$wrong',
         ).show();
 
         //TODO Step 4 Part C - reset the questionNumber,
@@ -297,7 +322,7 @@ class _QuizPageState extends State<QuizPage> {
                     height: 40,
                     width: 40,
                     child:Image(
-                        image: AssetImage("assets/quiz.jpg"),
+                        image: AssetImage("6.png"),
                         fit: BoxFit.cover),
                   ),
 
@@ -311,13 +336,17 @@ class _QuizPageState extends State<QuizPage> {
                   ),
                 ],
               ),
-              backgroundColor: Colors.black, //<-- SEE HERE
+              backgroundColor: Colors.blueGrey, //<-- SEE HERE
 
             ),
             body: Container(
-              color: Colors.amber,
-              child: Padding(
-                  padding: const EdgeInsets.all(13.0),
+
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("5.png"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                   child: Container(
 
                       child:Column(
@@ -330,7 +359,7 @@ class _QuizPageState extends State<QuizPage> {
 
                             Container(
 
-                              color: Colors.amberAccent,
+
 
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -356,7 +385,7 @@ class _QuizPageState extends State<QuizPage> {
                                     child: TextButton(
                                       style: TextButton.styleFrom(
 
-                                        backgroundColor: Colors.green, // Background Color
+                                        backgroundColor: Colors.blueGrey, // Background Color
                                       ),
                                       child: Text(
                                         'True',
@@ -382,7 +411,7 @@ class _QuizPageState extends State<QuizPage> {
                                     child: TextButton(
                                       style: TextButton.styleFrom(
 
-                                        backgroundColor: Colors.red, // Background Color
+                                        backgroundColor: Colors.blueGrey, // Background Color
                                       ),
                                       child: Text(
                                         'False',
@@ -413,7 +442,7 @@ class _QuizPageState extends State<QuizPage> {
                   )
               ),
             )
-        )
+
     );
   }
 }
